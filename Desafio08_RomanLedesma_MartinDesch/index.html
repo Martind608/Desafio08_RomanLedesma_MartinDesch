@@ -38,9 +38,9 @@
             <!-- Informacion del Cliente -->
             <h2>Información del Cliente</h2>
             <div class="client-info">
-                <input type="text" id="nombre" placeholder="Nombre Completo" required>
+                <input type="text" id="nombre" placeholder="Nombre Completo" required minlength="3" pattern="[a-zA-ZáéíóúÁÉÍÓÚ\s]+">
                 <input type="text" id="direccion" placeholder="Dirección" required>
-                <input type="tel" id="telefono" placeholder="Número de Teléfono" required>
+                <input type="tel" id="telefono" placeholder="Número de Teléfono" required pattern="\d{10}" title="Debe ingresar un número de 10 dígitos.">
                 <input type="email" id="correo" placeholder="Correo Electrónico" required>
             </div>
 
